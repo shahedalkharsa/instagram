@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 
 class Post extends StatelessWidget {
-  const Post({Key? key}) : super(key: key);
+  const Post({Key? key, this.name = "", this.photo = ""}) : super(key: key);
+
+  final String name, photo;
 
   @override
   Widget build(BuildContext context) {
@@ -23,7 +25,7 @@ class Post extends StatelessWidget {
                   width: 10,
                 ),
                 Text(
-                  "Maha",
+                  name,
                   style: TextStyle(
                       color: Colors.white,
                       fontSize: 15,
@@ -37,8 +39,7 @@ class Post extends StatelessWidget {
             )
           ]),
         ),
-        Image.network(
-            "https://images.immediate.co.uk/production/volatile/sites/30/2020/08/flat-white-3402c4f.jpg?quality=90&resize=960,872"),
+        Image.network(photo),
         Padding(
           padding: const EdgeInsets.all(15.0),
           child: Row(

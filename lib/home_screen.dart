@@ -108,23 +108,23 @@ class HomeScreen extends StatelessWidget {
                   SizedBox(
                     width: 5,
                   ),
-                  Story(),
+                  Story(name: "bushra"),
                   SizedBox(
                     width: 5,
                   ),
-                  Story(),
+                  Story(name: "maha"),
                   SizedBox(
                     width: 5,
                   ),
-                  Story(),
+                  Story(name: "nourhan"),
                   SizedBox(
                     width: 5,
                   ),
-                  Story(),
+                  Story(name: "layla"),
                   SizedBox(
                     width: 5,
                   ),
-                  Story()
+                  Story(name: "huda")
                 ],
               ),
             ),
@@ -133,11 +133,19 @@ class HomeScreen extends StatelessWidget {
             thickness: 0.2,
             color: Colors.grey,
           ),
-          Post(),
+          Post(
+            name: "shahed",
+            photo:
+                "https://www.costacruises.com/content/dam/costa/inventory-assets/countries/MDV/MDV.jpg.image.750.563.low.jpg",
+          ),
           SizedBox(
             height: 10,
           ),
-          Post(),
+          Post(
+            name: "maha",
+            photo:
+                "https://bigseventravel.com/wp-content/uploads/2019/09/Screenshot-2019-09-07-at-15.56.29.png",
+          ),
         ],
       ),
     );

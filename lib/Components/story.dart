@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 
 class Story extends StatelessWidget {
-  const Story({Key? key}) : super(key: key);
+  const Story({Key? key, this.name = " "}) : super(key: key);
+
+  final String name;
 
   @override
   Widget build(BuildContext context) {
@@ -17,7 +19,7 @@ class Story extends StatelessWidget {
           ),
         ),
         Text(
-          "Abdullah",
+          name,
           style: TextStyle(color: Colors.grey, fontSize: 12),
         ),
       ],
